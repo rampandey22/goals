@@ -4,17 +4,17 @@ class HelloWorldService {
 
     executeHelloWorldService() {
         //console.log('executed service')
-        return axios.get(`${JPA_API_URL}/hello-world`);
+        return axios.get(`${API_URL}/hello-world`);
     }
 
     executeHelloWorldBeanService() {
         //console.log('executed service')
-        return axios.get(`${JPA_API_URL}/hello-world-bean`);
+        return axios.get(`${API_URL}/hello-world-bean`);
     }
 
     executeHelloWorldPathVariableService(name) {
        
-        return axios.get(`${JPA_API_URL}/hello-world/path-variable/${name}`
+        return axios.get(`${API_URL}/hello-world/path-variable/${name}`
            
         );
     }
